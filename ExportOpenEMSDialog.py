@@ -14,7 +14,7 @@ APP_CONTEXT = "None"
 
 try:
 	import FreeCAD
-	import WebGui
+	#import WebGui
 	import KiCADImporterToolDialog	#import for KiCAD Import Tool
 	APP_CONTEXT = "FreeCAD"
 except:
@@ -517,7 +517,8 @@ class ExportOpenEMSDialog(QtCore.QObject):
 		Open index help html webpage inside freecad window.
 		:return:
 		"""
-		WebGui.openBrowser(f"{os.path.dirname(__file__)}\\documentation\\help\\index.html")
+		#WebGui.openBrowser(f"{os.path.dirname(__file__)}\\documentation\\help\\index.html")
+		pass
 
 	def openBlenderWebGuiHelp(self):
 		"""
